@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,600;0,700;0,800;1,100;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!--Encabezado -->
+    <header>
+      <div class="div-logo">
+        <a class="logo" href="../index.html">
+          <img src="../img/logo.png" alt="pelota logo" width="90" />
+        </a>
+      </div>
+
+      <nav class="header-nav">
+        <ul>
+          <li>
+            <a href="../index.html">Home</a>
+          </li>
+        </ul>
+        <ul>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Parte principal -->
+    <main>
+      <h1 class="titulo-contacto text-secondary">Contactanos</h1>
+      <!-- Formulario -->
+      <form
+        class="form-contacto"
+        action="https://formspree.io/f/xeenndop"
+        method="POST"
+      >
+        <div class="grupo-input">
+          <label>
+            Ingresa tu email:
+            <input type="email" name="email" placeholder="ejemplo@correo.com" />
+          </label>
+        </div>
+
+        <div class="grupo-input">
+          <label>
+            Dejanos tu mensaje:
+            <textarea
+              name="message"
+              placeholder="Escribe tu mensaje aquí..."
+            ></textarea>
+          </label>
+        </div>
+
+        <button class="btn bg-secondary text-light" type="submit">
+          Enviar
+        </button>
+      </form>
+    </main>
+    <!-- Pie de página -->
+    <footer>
+      <nav>
+        <ul class="footer-list">
+          <li><img src="../img/instagram.png" alt="logo de instagram" /></li>
+          <li><img src="../img/whatsapp.png" alt="logo de whatsapp" /></li>
+        </ul>
+      </nav>
+      <p class="footer-texto">Tienda Euro-Step - Bs. As. - Argentina</p>
+    </footer>
+  </body>
+</html>

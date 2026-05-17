@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.6rem;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 130px;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.15;
+    margin: 3rem 0;
+}
+
+h2{
+    color: #100f10;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.btn {
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1.6rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+header{
+    background-color: rgba(23, 64, 139, 0.85);
+    color: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+}
+
+footer{
+    background:  rgba(0, 13, 255, 0.27);
+    color: #000000;
+    width: 100%;
+    flex-direction: column;   
+    align-items: center;      
+    gap: 1rem;                
+    padding: 0rem 2rem;
+}
+
+.div-logo{
+    margin-left: 1rem;
+}
+
+.logo, .header-nav ul li a{
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: inherit;
+    display: inline-block;
+    padding: 1rem;
+
+}
+
+.header-nav ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+footer .footer-list{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;  
+    padding: 0;
+    margin: 0;
+}
+
+.footer-list li{
+    padding: 0rem;
+}
+
+.footer-list img{
+    width: 5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.footer-texto {
+    font-size: 1.2rem;        
+    color: #000000;           
+    text-align: center;
+    }
+/* --------------------------------- colores -------------------------------- */
+
+.bg-primary{
+    background-color: #5e5d60;
+}
+
+.bg-secondary{
+    background-color: #383837;
+}
+
+.text-light{
+    color: #ffffff;
+}
+
+.text-dark{
+    color: #000000;
+}
+
+.text-secondary{
+    color: #000000;
+}
+
+/* ---------------------------------- Home ---------------------------------- */
+
+.titulo-home .titulo-contacto{
+    font-size: 5rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.parrafo{
+    width: 80%;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    padding: 3rem;
+}
+
+.contenedor-tarjetas{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+   
+}
+
+.card{
+    margin: 1rem;
+    background: #96949b;
+    color: #000000;
+    width: 40rem;
+    padding-bottom: 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+/* Animación */
+.card:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
+}
+
+.card img{
+    width: 100%;
+}
+
+
+.card .btn{
+    margin-top: auto;
+    align-self: center;
+}
+
+.card-contenido{
+    font-size: 1.4rem;       
+    color: #333333;          
+    text-align: justify;     
+    line-height: 1.6;        
+    padding: 1rem;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  gap: 1rem;              
+  margin-top: auto;       
+}
+.precio {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+
+/* -------------------------------- contacto -------------------------------- */
+
+
+
+.form-contacto{
+    background: #96949b;
+    color: #000000;
+    width: 100%;
+    max-width: 50rem;
+    font-size: 2rem;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+}
+.form-contacto button {
+  display: block;       
+  margin: 0 auto;       
+}
+
+.grupo-input{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.grupo-input input,
+.grupo-input textarea {
+  width: 100%;            
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+
+
+/* ------------------------------ media queries ----------------------------- */
+
+@media (max-width: 600px){
+    header {
+    flex-direction: column;   
+    align-items: center;
+    padding: 1rem;
+  }
+
+  header nav ul {
+    flex-direction: column;   
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .contenedor-tarjetas {
+    flex-direction: column;  
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .card {
+    width: 90%;               
+    font-size: 1.4rem;
+  }
+
+  .card-contenido {
+    font-size: 1.2rem;        
+    line-height: 1.4;
+    text-align: justify;
+  }
+
+  footer {
+    flex-direction: column;   
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .footer-list img {
+    width: 3.5rem;            
+  }
+
+  .footer-leyenda {
+    font-size: 1rem;          
+  }
+}
