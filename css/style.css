@@ -55,22 +55,21 @@ h2{
 }
 
 header{
-    background-color: rgba(23, 64, 139, 0.85);
+    background-color: #0037feaa;
     color: #ffffff;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0rem 2rem;
+    padding: 0rem 8rem;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
-
 }
 
 footer{
-    background:  rgba(0, 13, 255, 0.27);
+    background:  #0037feaa;
     color: #000000;
     width: 100%;
     flex-direction: column;   
@@ -90,7 +89,6 @@ footer{
     color: inherit;
     display: inline-block;
     padding: 1rem;
-
 }
 
 .header-nav ul{
@@ -123,17 +121,18 @@ footer .footer-list{
 
 .footer-texto {
     font-size: 1.2rem;        
-    color: #000000;           
+    color: #ffffff;           
     text-align: center;
     }
+
 /* --------------------------------- colores -------------------------------- */
 
 .bg-primary{
-    background-color: #5e5d60;
+    background-color: #0035FE;
 }
 
 .bg-secondary{
-    background-color: #383837;
+    background-color: #51A3A3;
 }
 
 .text-light{
@@ -170,12 +169,11 @@ footer .footer-list{
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
-   
 }
 
 .card{
     margin: 1rem;
-    background: #96949b;
+    background: #ffffff;
     color: #000000;
     width: 40rem;
     padding-bottom: 2rem;
@@ -192,8 +190,8 @@ footer .footer-list{
 
 /* Animación */
 .card:hover {
-  transform: translateY(-10px); 
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
 }
 
 .card img{
@@ -204,6 +202,14 @@ footer .footer-list{
 .card .btn{
     margin-top: auto;
     align-self: center;
+
+    background-color: #17408B;  
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;         
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
 }
 
 .card-contenido{
@@ -215,37 +221,44 @@ footer .footer-list{
 }
 
 .card-footer {
-  display: flex;
-  flex-direction: column; 
-  align-items: center;    
-  gap: 1rem;              
-  margin-top: auto;       
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    gap: 1rem;              
+    margin-top: auto;    
+    width: 80%;    
 }
 .precio {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #000000;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #000000;
 }
 
 
 /* -------------------------------- contacto -------------------------------- */
 
-
-
 .form-contacto{
-    background: #96949b;
-    color: #000000;
+    background: #0037feaa;
+    color: #ffffff;
     width: 100%;
     max-width: 50rem;
     font-size: 2rem;
     padding: 3rem;
     border-radius: 1rem;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-
 }
+
 .form-contacto button {
-  display: block;       
-  margin: 0 auto;       
+    display: block;       
+    margin: 0 auto;     
+    background-color: #17408B;   
+    color: #ffffff;
+    border: none;
+    padding: 1rem 1rem;         
+    width: 80%;                  
+    border-radius: 50px;        
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;  
 }
 
 .grupo-input{
@@ -257,12 +270,12 @@ footer .footer-list{
 
 .grupo-input input,
 .grupo-input textarea {
-  width: 100%;            
-  padding: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 0.5rem;
-  font-size: 1.6rem;
-  font-family: "Ubuntu", sans-serif;
+    width: 100%;            
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    font-family: "Ubuntu", sans-serif;
 }
 
 
